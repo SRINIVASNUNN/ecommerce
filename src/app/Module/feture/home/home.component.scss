@@ -1,0 +1,295 @@
+@media screen and (max-width: 400px) {
+  .product-grid {
+      grid-template-columns: 1fr; /* Adjust the grid for smaller screens */
+  }
+  .tree-box, .right-image {
+      width: 100%; /* Full width on small screens */
+  }
+  .product-list {
+      width: 100%; /* Full width for product list */
+      left: 0; /* Reset the left position */
+      padding: 10px; /* Adjust padding */
+  }
+  .product-list {
+    width: 120%;
+    padding: 20px;
+    background-color: #f6e4ba;
+    border-radius: 5px;
+    position: relative;
+    left: -10%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Apply a shadow effect */
+  }
+  .image-container {
+    display: flex;
+    width: 80%;
+    height: 50vh;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    left: 2%;
+   
+  
+    gap: 20px; /* Use flexbox to arrange images horizontally */
+  }
+  .image-container img {
+    width: 10%; /* Ensure images don't exceed the container width */
+    height: auto; /* Maintain the aspect ratio of the images */
+    /* Add some spacing between the images */
+    border: 3px double rgb(240, 43, 69); /* Border style and color */
+    border-radius: 20px; /* Border radius for rounded corners */
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); 
+  }
+  /* Other responsive adjustments... */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.items{
+    position: relative;
+    margin-top: 2%;
+    left: 0%;
+}
+.mt{
+    background-color: #fbfbfb;
+    
+}
+.product-list {
+    width: 120%;
+    padding: 20px;
+    background-color: #f6e4ba;
+    border-radius: 5px;
+    position: relative;
+    left: -10%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Apply a shadow effect */
+  }
+/* styles.css */
+.typewriter {
+    overflow: hidden;
+    color: rgb(246, 115, 29);
+    font-family: 'Your-Handwriting-Font', cursive;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-align: center;
+    z-index: 30px;
+    border-right: 2px solid black;
+    white-space: nowrap;
+    animation: typing 1s steps(40) 1s ,  ;
+  }
+  
+  
+/* Styles for the entire products section */
+.products-section {
+    padding-top: 6rem;
+  }
+  
+  /* Styles for the product grid container */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.75rem;
+    position: relative;
+    top: -100%;
+    
+  }
+  
+  /* Styles for the product grid content, e.g., filters */
+  .product-grid-content {
+    grid-column: span 3;
+    
+  }
+  
+  /* Styles for the product card container */
+  .product-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+  }
+  .container {
+    display: flex; /* Use flexbox to arrange the divs side by side */
+    justify-content: space-between; /* Add space between the two divs */
+}
+
+.tree-box {
+    box-shadow: 3px 3px 5px #266143d0;
+    color: black;
+    width: 45%; /* Adjust the width as needed */
+    height: 600px;
+    font-size: larger;
+    line-height: 2.5;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 10px;
+}
+
+.tree-box h1 {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.tree-box p {
+    width: 80%;
+    font-size: medium;
+    position: relative;
+    left: 6%;
+}
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.button {
+  padding: 10px 20px;
+  background-color: #f82626;
+  font-family: 'Your-Handwriting-Font', cursive;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button:active {
+  background-color: #003a6f;
+}
+ /* General styles */
+.about-section {
+  text-align: center;
+}
+.image-container {
+  display: flex;
+  width: 80%;
+  height: 50vh;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  left: 2%;
+  flex: 1; 
+ 
+
+  gap: 20px; /* Use flexbox to arrange images horizontally */
+}
+.image-container img {
+  width: 100%; /* Ensure images don't exceed the container width */
+  height: auto; /* Maintain the aspect ratio of the images */
+  /* Add some spacing between the images */
+  border: 3px double rgb(240, 43, 69); /* Border style and color */
+  border-radius: 20px; /* Border radius for rounded corners */
+ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
+@media screen and (max-width: 600px) {
+  .image-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally in the container */
+    justify-content: center; /* Center items vertically in the container */
+    width: 150%; /* Set to desired width */
+    max-width: 1300px; /* Adjust this value as needed */
+    margin-left: auto;
+    margin-right: auto; /* Center the container */
+    height: auto;
+    overflow-x: hidden; /* Optional: hide horizontal overflow */
+    left: -28%;
+}
+
+.image-container a {
+    width: 100%; /* Make anchor take full width of the container */
+    text-align: center; /* Center the images inside the anchor tags */
+    margin: 20px 0; /* Add some vertical space between images */
+}
+
+.image-container img {
+    max-width: 100%; /* Responsive images, set to max-width of the parent */
+    height: auto;
+}
+
+}
+.ourproducts{
+
+  color:#DBAC65;
+
+  font-size: 2.2em;
+  font-weight: bold;
+  text-align: center;
+  z-index: 30px;
+  border-right: 2px solid black;
+  font-family: Arial, sans-serif;
+
+}
+
+.about-us {
+  background-color: #012F1D;
+  color:#DBAC65;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.912); 
+  padding: 10px;
+  height: 520PX;
+  text-align: center;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+
+}
+@media (max-width: 600px) {
+  .about-us {
+    background-color: #012F1D;
+  color:#DBAC65;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.912); 
+  padding: 10px;
+  height: 100%;
+  text-align: center;
+
+ 
+  font-family: Arial, sans-serif;
+
+  }
+}
+
+
+.content {
+  flex: 1; /* Take up remaining space */
+  padding: 20px; /* Add some padding for spacing */ 
+  font-family: Arial, sans-serif;
+}
+.right-image {
+
+  width: 30%; /* Ensure images don't exceed the container width */
+  height: auto; /* Maintain the aspect ratio of the images */
+  /* Add some spacing between the images */
+ 
+}
+@media (max-width: 600px) {
+  .about-us {
+    flex-direction: column; /* Stack items vertically on small screens */
+}
+}
+
+
+
+
+ 
+  

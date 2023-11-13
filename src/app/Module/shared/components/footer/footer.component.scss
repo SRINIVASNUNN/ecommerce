@@ -1,0 +1,35 @@
+.footer{
+    background-color: hsl(153, 48%, 16%);
+    color: #eed276;
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px;
+    @media (min-width: 1024px) {
+        padding: 20px;
+      }
+}
+.logo {
+    width: 15%;
+    margin: 0 auto;
+    display: block;
+  }
+  .title{
+    margin: 0 auto;
+    display: block;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .social-media a {
+    margin-right: 10px; /* Adjust the value to control the gap between icons */
+  }

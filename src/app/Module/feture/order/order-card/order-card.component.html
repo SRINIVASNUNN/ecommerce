@@ -1,0 +1,30 @@
+
+<div  class="background">
+  <div class="box">
+    <div class="grid grid-cols-6">
+      <div class="col-span-3">
+        <div class="flex items-center w-full">
+          <img
+            class="w-[5rem] h-[5rem] object-cover object-top"
+            [src]="orderItem.product.imageUrl"
+            alt=""
+          />
+          <div class="ml-5">
+            <p class="font-semibold text-lg">
+              {{orderItem.product.title}}
+            </p>
+            <p class="text-sm text-gray-400">Size : {{orderItem.size}}</p>
+            <!-- <p class="text-sm text-gray-400">Color : {{orderItem.product.color}}</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-span-1">
+        <p>${{orderItem.product.discountedPrice +5}}</p>
+      </div>
+      <div class="col-span-2">
+        <p class="font-semibold text-lg">Expected Delivery within one week.</p>
+        <p class="text-sm">You will be notified by email.</p>
+      </div>
+    </div>
+  </div>
+</div>
